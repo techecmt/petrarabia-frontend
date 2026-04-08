@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
+import RFQFloating from "./components/RFQFloating";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -29,7 +30,10 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${inter.variable} h-full antialiased`}
     >
-      <body suppressHydrationWarning className="min-h-full flex flex-col">{children}</body>
+      <body suppressHydrationWarning className="min-h-full flex flex-col">
+        {children}
+        <RFQFloating />
+      </body>
     </html>
   );
 }

@@ -6,14 +6,21 @@ import { HiMapPin, HiEnvelope, HiPhone } from "react-icons/hi2";
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Solutions", href: "/solutions" },
   { label: "Contact", href: "/contact" },
 ];
 
 const services = [
-  { label: "Filtration Solution", href: "/products/filtration" },
-  { label: "IIoT Consultancy", href: "/services/iiot" },
-  { label: "MRO Consumables", href: "/services/mro" },
-  { label: "Cold test", href: "/services/cold-test" },
+  { label: "Filtration Solutions", href: "/solutions/filtration-solutions" },
+  { label: "IIoT Consultancy", href: "/solutions/iiot-consultancy" },
+  { label: "MRO Consumables", href: "/solutions/mro-consumables" },
+  { label: "Condition Monitoring Services", href: "/solutions/condition-monitoring-services" },
+  { label: "Cold Test for Lines & Equipments", href: "/solutions/cold-test-for-lines-equipments" },
+  { label: "Hydraulic Hoses, Fittings & Assemblies", href: "/solutions/hydraulic-hoses-fittings-assemblies" },
+  { label: "Helium Leak Test for Equipments", href: "/solutions/helium-leak-test-for-equipments" },
+  { label: "Lubricants & Fluid Management", href: "/solutions/lubricants-fluid-management" },
+  { label: "Pneumatic & Instrumentation Solutions", href: "/solutions/pneumatic-instrumentation-solutions" },
+  { label: "Steam Trap Performance Audit", href: "/solutions/steam-trap-performance-audit" },
 ];
 
 export default function Footer() {

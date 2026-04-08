@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 import {
   HiCheckCircle,
   HiGlobeAlt,
@@ -111,95 +112,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right: Contact Form */}
-            <div className="rounded-2xl bg-gray-50 p-8 shadow-sm lg:p-10">
-              <h3 className="text-2xl font-bold text-gray-900">
-                Send Us a Message
-              </h3>
-              <form className="mt-6 space-y-5">
-                <div className="grid gap-5 sm:grid-cols-2">
-                  <div>
-                    <label
-                      htmlFor="firstName"
-                      className="mb-1 block text-sm font-medium text-gray-700"
-                    >
-                      First Name
-                    </label>
-                    <input
-                      id="firstName"
-                      name="firstName"
-                      type="text"
-                      required
-                      className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 outline-none transition-colors focus:border-orange-400 focus:ring-1 focus:ring-orange-400"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="lastName"
-                      className="mb-1 block text-sm font-medium text-gray-700"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      required
-                      className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 outline-none transition-colors focus:border-orange-400 focus:ring-1 focus:ring-orange-400"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="mb-1 block text-sm font-medium text-gray-700"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 outline-none transition-colors focus:border-orange-400 focus:ring-1 focus:ring-orange-400"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="mb-1 block text-sm font-medium text-gray-700"
-                  >
-                    Phone Number
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 outline-none transition-colors focus:border-orange-400 focus:ring-1 focus:ring-orange-400"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="mb-1 block text-sm font-medium text-gray-700"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full resize-none rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-gray-900 outline-none transition-colors focus:border-orange-400 focus:ring-1 focus:ring-orange-400"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full rounded-lg bg-orange-400 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-500"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </section>
 
