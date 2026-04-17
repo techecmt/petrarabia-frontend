@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const partners = [
-  { src: "/parker-logo.png", alt: "Parker" },
+ 
   { src: "/Donaldson-logo.png", alt: "Donaldson" },
 ];
 
